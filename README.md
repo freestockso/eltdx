@@ -1,5 +1,9 @@
 
-集合竞价 get_call_auction() - test  202605  https://github.com/electkismet/eltdx/blob/main/docs/EXAMPLES.md#8-%E9%9B%86%E5%90%88%E7%AB%9E%E4%BB%B7-get_call_auction
+202605
+
+集合竞价 get_call_auction() - test  202605  
+
+see:https://github.com/electkismet/eltdx/blob/main/docs/EXAMPLES.md#8-%E9%9B%86%E5%90%88%E7%AB%9E%E4%BB%B7-get_call_auction
 
 ~~~
 
