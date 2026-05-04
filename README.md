@@ -1,3 +1,36 @@
+
+集合竞价 get_call_auction() - test  202605  https://github.com/electkismet/eltdx/blob/main/docs/EXAMPLES.md#8-%E9%9B%86%E5%90%88%E7%AB%9E%E4%BB%B7-get_call_auction
+
+~~~
+
+from eltdx import TdxClient
+
+with TdxClient() as client:
+    auction = client.get_call_auction("sz301487", include_raw=True)
+
+print(auction.count)
+print(auction.items[0].time, auction.items[0].price, auction.items[0].flag)
+print(auction.items[0].raw_hex)
+
+print(auction.items[79].time, auction.items[79].price, auction.items[79].flag)
+print(auction.items[79].raw_hex)
+
+~~~
+
+output
+
+~~~
+PS D:\Thirdprogram\newtdxtqv772\PYPlugins> & F:\Thirdprogram\Python\python.exe "d:/Thirdprogram/newtdxtqv772/PYPlugins/user/tdxdata_test copy.py"
+80
+2026-05-05 09:15:00+08:00 25.26 -1
+2b027b14ca412f000000fdffffff0000
+2026-05-05 14:59:51+08:00 24.37 1
+8303c3f5c2410d030000150000000033
+~~~
+
+
+
+
 <div align="center">
   <h1>eltdx</h1>
   <p><strong>通达信行情协议的 Python 库</strong></p>
